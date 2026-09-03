@@ -2,42 +2,49 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Level-Up Gamer</title>
-    <!-- cargamos los estilos para que la página no se vea fea -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Level-Up Gamer - Inicio</title>
+    <!-- aquí cargamos los estilos globales -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
         <h1>Level-Up Gamer</h1>
-        <!-- menú de navegación -->
         <nav>
             <a href="index.html">Inicio</a> | 
-            <a href="#productos">Productos</a> | 
-            <a href="#contacto">Contacto</a>
+            <a href="productos.html">Productos</a> | 
+            <a href="carrito.html">Carrito</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Bienvenidos cabros a la fokin tienda gaymers</h2>
-            <p>Encuentra tus consolas y accesorios favoritos con envío a todo Chile.</p>
+            <h2>Bienvenidos cabros a la tienda gamer</h2>
+            <p>Encuentra tus consolas, accesorios y PCs con envío a todo Chile.</p>
         </section>
 
-        <section id="productos">
-            <h3>Nuestros productos destacados</h3>
-            
-            <div class="producto">
-                <h4>PlayStation 5</h4>
-                <p>Precio: $549.990</p>
-                <p>La consola de última generación de Sony.</p>
-            </div>
-
-            <div class="producto">
-                <h4>Control Xbox Series X</h4>
-                <p>Precio: $59.990</p>
-                <p>Comodidad y precisión para tus partidas.</p>
-            </div>
+        <section id="registro">
+            <h3>Regístrate en la comunidad</h3>
+            <form id="formRegistro">
+                <div>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="correo">Correo (si es @duocuc.cl tienes descuento):</label><br>
+                    <input type="email" id="correo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" required>
+                </div>
+                <br>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p id="mensajeError" style="color: red;"></p>
+            <p id="mensajeExito" style="color: #39FF14;"></p>
         </section>
     </main>
 
@@ -46,4 +53,4 @@
     </footer>
 
 </body>
-</html> 
+</html>
