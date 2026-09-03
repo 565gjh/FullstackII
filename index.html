@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Level-Up Gamer - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Level-Up Gamer</h1>
+        <nav>
+            <a href="index.html">Inicio</a> | 
+            <a href="productos.html">Productos</a> | 
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bienvenidos cabros a la tienda gamer</h2>
+            <p>Encuentra tus consolas, accesorios y PCs con envío a todo Chile.</p>
+        </section>
+
+        <section id="registro">
+            <h3>Regístrate en la comunidad</h3>
+            <form id="formRegistro">
+                <div>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="correo">Correo (si es @duocuc.cl tienes descuento):</label><br>
+                    <input type="email" id="correo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" required>
+                </div>
+                <br>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p id="mensajeError" style="color: red;"></p>
+            <p id="mensajeExito" style="color: #39FF14;"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Level-Up Gamer - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
